@@ -1,0 +1,34 @@
+---
+title: "Code for Whales in Covid"
+author: "Grace Lewin"
+date: "11/23/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+library(tidyverse)
+library(here)
+library(janitor)
+```
+
+
+Read in Data
+```{r}
+whales_full <- read.csv(here("data", "Occurrence.csv")) %>% 
+  clean_names()
+
+whales <- whales_full %>% 
+  select(
+    decimallongitude,
+    decimallatitude,
+    date_year,
+    scientificname,
+    originalscientificname
+  )
+```
+

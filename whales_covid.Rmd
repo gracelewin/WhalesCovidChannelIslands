@@ -1,0 +1,78 @@
+---
+title: "Whales During Covid"
+author: "Grace Lewin"
+date: "11/23/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+### Data
+
+Data gathered from [OBIS Database Map Tool](https://mapper.obis.org/?taxonid=137013,137092,137112,137102,137119&startdate=2019-01-01&enddate=2020-12-31&geometry=POLYGON%20((-116.7069%2032.6655,%20-121.2812%2032.5283,%20-121.2665%2034.3925,%20-116.8473%2034.4471,%20-116.7069%2032.6655))) 
+
+- I specified the species and geometry bounding box in the query.
+
+-   This searches data from all datasets in OBIS that include these species during the date range specified (2019-2020) and the geometry specified.
+
+#### Species included in data query:
+
+-   All Balenoptera
+
+    -   Balaenoptera musculus (Blue Whale)
+
+    -   Balaenoptera physalus (Fin Whale)
+
+    -   Balaenoptera acutorostrata (Minke Whale)
+    
+    - Balaenoptera brydei (Bryde's Whale)
+
+-   Eschrichtius robustus (Grey Whale)
+
+-   Orcinus orca (Orca)
+
+-   Physeter macrocephalus (Sperm Whale)
+
+-   Megaptera novaeangliae (Humpback Whale)
+
+![](images/Screen%20Shot%202021-11-23%20at%206.49.25%20PM.png){width="749"}
+
+
+#### Query Result
+
+A total of 1,426 records were found with 8 species during the years 2019 - 2020.
+
+![](images/Screen%20Shot%202021-11-23%20at%207.29.10%20PM.png)
+
+##### Databases
+- [Happywhale - Humpback Whale in North Pacific Ocean](https://obis.org/dataset/fcbb56da-7237-43a3-831e-d45571496c68) - 1,059 records
+
+- [Happywhale - Blue Whale in North Pacific Ocean](https://obis.org/dataset/6df306da-31d0-47f5-bb1b-4b084d03d7f1) - 155 records
+
+- [Happywhale - Gray Whale in North Pacific Ocean](https://obis.org/dataset/e31406eb-bf39-4993-a9a1-51cfe39da569) - 126 records
+
+- [Happywhale - Fin Whale in North Pacific Ocean](https://obis.org/dataset/cd94ac49-d8f6-4a50-a3ea-82dd8183c154) - 61 records
+
+- [Happywhale - Minke Whale in North Pacific Ocean](https://obis.org/dataset/093e83be-3532-4352-a18f-d56aebc1602a) - 11 records
+
+- [Happywhale - Killer Whale in North Pacific Ocean](https://obis.org/dataset/fefcba02-f27c-448e-8038-e4a5e0bd51d7) - 9 records
+
+- [Happywhale - Bryde's whale in North Pacific Ocean](https://obis.org/dataset/fecb2219-2c7d-4324-8a13-e95fe552a743) - 4 records
+
+- [Happywhale - Sperm Whale in North Pacific Ocean](https://obis.org/dataset/79eafe98-b6b8-48c7-9d10-1204044ad239) - 1 record
+
+[Happywhale](https://happywhale.com/home) is a citizen science platform where people can report marine mammal sightings.
+
+
+### References
+
+-   [OBIS Mapping Tool](https://mapper.obis.org/)
+
+-   [OBIS](https://obis.org/)
+
+-   [Whales in Channel](https://newportwhales.com/whale_watching_los_angeles.html#types)
+
+-   [NOAA Fisheries](https://www.fisheries.noaa.gov/)
